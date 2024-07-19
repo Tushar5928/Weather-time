@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TJ Weather & Time website</title>
+  <link rel="icon" href="tjlogos.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="aboutme.css">
+</head>
+
+<body>
+  <div class="head">
+  <button onclick="goToLastPage()" class="back"><i class="fa-solid fa-arrow-left"></i></button>
+  <h1 id="head">About Me</h1>
+  </div>
+    <div id="mainabout">
+  <img id="logo" src="tjlogo.jpg" alt="logo">
+  <p id="mainp">Hello, my name is Tushar Nitinbhai Jagad. I am a diploma student with aspirations of becoming a computer engineer. My journey into the world of web development began with learning HTML, CSS, and JavaScript, and since then, I have created several websites. You can find links to these websites on the home page.<br><br>I recently passed my 10th grade with 82% and I am now focusing on my diploma studies to further my knowledge and skills in computer engineering. Apart from my academic and professional pursuits, I have a passion for drawing and many more skills, which allows me to express my creativity in different ways.</p>
+  <h3>- June, 2024<h3>
+  </div>
+  
+  <div class="hr"><hr></div>
+  
+  <div class="secondabout">
+    <div class="secondabout2">
+    <h1 class="abouth">My Skills</h1>
+    <p class="aboutp"><strong>1. CODING :-</strong> I began my coding journey in 2020 during the COVID-19 pandemic. My first step was learning HTML, which is a foundational language for web development. With HTML, I discovered the basics of creating websites.Next, I delved into CSS to bring design and style to my web pages. After gaining a solid understanding of HTML and CSS, I moved on to JavaScript, which allowed me to add interactivity and dynamic features to my websites.Currently, I am expanding my skill set by learning Python, a versatile language that opens up new possibilities in both web development and other areas of programming.</p>
+    <p class="aboutp aboutp2"><strong>2. DRAWING :-</strong> I have a strong passion for drawing. Drawing has always been a significant part of my life, offering a creative outlet and a way to unwind. It allows me to explore different ideas, emotions, and perspectives through art.I enjoy experimenting with various styles and techniques, from simple sketches and doodles to more detailed and complex illustrations. This hobby has helped me develop a keen eye for detail, patience, and creativity, which also benefit my work in web development.</p>
+    </div>
+  </div>
+  
+  <!--footer-->
+    <section>
+      <div id="footer">
+        <h2 id="fhead">TJ Weather and Time</h2>
+      </div>
+    </section>
+  <script>
+    function goToLastPage() {
+      window.location.href = document.referrer;
+    }
+  </script>
+</body>
+</html>

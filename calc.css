@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #FFCF76;
+  text-align: center;
+}
+
+h1{
+  display: inline-block;
+  text-align: left;
+}
+
+.back{
+  font-size: 5vw;
+  border: 0;
+  color: pink;
+  margin-right: 5vw;
+  background-color: blueviolet;
+}
+
+.head{
+  background-color: blueviolet;
+  color: pink;
+  padding: 2vw;
+  margin-bottom: 2vw;
+  border-bottom: 2vw double #FFCF76;
+  text-align: left;
+}
+
+#result{
+  background-color: #9A9A9A;
+  width: 70vw;
+  margin: 2vw;
+  font-size: 3vw;
+  padding: 1vw;
+  border: 5px solid greenyellow;
+  border-radius: 2vw;
+  color: white;
+  font-weight: bold;
+}
+
+.number{
+  border: 3px solid green;
+  background-color: lime;
+  color: darkblue;
+}
+
+.operator{
+  border: 3px solid deepskyblue;
+  background-color: mediumblue;
+  color: aqua;
+}
+
+.great{
+  height: 15vw;
+  width: 15vw;
+  font-size: 5vw;
+  border-radius: 3vw;
+  margin: 1vw;
+}
+
+.great:focus{
+  border: 3px solid deeppink;
+  background-color: pink;
+  color: darkred;
+}
+
+.special{
+  width: 33vw;
+  border: 3px solid deepskyblue;
+  background-color: mediumblue;
+  color: aqua;
+}
+
+.equals{
+  width: 50vw;
+}

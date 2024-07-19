@@ -1,0 +1,102 @@
+*{
+  padding: 0;
+  margin: 0
+}
+
+body{
+  background-color: #F0BE60;
+}
+
+.back{
+  font-size: 5vw;
+  border: 0;
+  margin-right: 5vw;
+  background-color: purple;
+  color: hotpink;
+}
+
+.head{
+  background-color: purple;
+  color: hotpink;
+  padding: 3vw;
+  margin-bottom: 2vw;
+  border-bottom: 3vw double #F0BE60;
+  display: inline-block;
+  text-align: left;
+  font-size: 3vw;
+  width: 94vw;
+}
+
+#head{
+  display: inline-block;
+  text-align: left;
+}
+
+#mainabout{
+  background-color: blueviolet;
+  padding: 3vw;
+  margin: 5vw;
+  text-align: justify;
+  border: 2vw double orange;
+  border-radius: 5vw;
+  color: white;
+}
+#logo{
+  width: 80vw;
+  border-radius: 4vw;
+}
+#mainp{
+  margin: 3vw 5vw;
+}
+
+.aboutd {
+  margin: 5vw;
+}
+.abouth{
+  padding: 3vw;
+  background-color: darkblue;
+  color: cyan;
+  border-radius: 5vw 5vw 0 0;
+  border-bottom: 2vw double greenyellow;
+}
+.aboutp{
+  padding: 3vw 6vw;
+  background-color: greenyellow;
+  text-align: justify;
+  border-radius: 0 0 5vw 5vw;
+}
+hr{
+  border-color: lightpink;
+}
+.hr{
+  margin: 5vw;
+  padding: 4vw;
+  background-color: purple;
+  color: deeppink;
+  border-radius: 5vw;
+}
+.secondabout{
+  background-color: skyblue;
+  border: 2vw double darkblue;
+  border-radius: 5vw;
+  margin: 5vw;
+  padding: 3vw 0vw;
+}
+
+/* Add styles for the footer */
+
+#footer{
+  border-top: 1vw orange solid;
+  background-color: #3C3C52;
+  color: #FFF78E;
+  font-size: 3vw;
+  padding: 5vw;
+  border-radius: 10vw 10vw 0 0;
+  text-align: center;
+}
+#fhead{
+    display: inline-block;
+    margin: 10px;
+    font-size: 6vw;
+    color: white;
+}

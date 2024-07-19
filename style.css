@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: darkorange;
+}
+
+#body{
+  border-width: 3vw;
+  border-color: lime aqua;
+  border-style: double;
+  background-color: #E854FF;
+  border-radius: 5vw;
+  margin: 8vw;
+  padding: 10vw 7vw;
+  text-align: center;
+}
+
+h1{
+  font-size: 7vw;
+  color: darkblue;
+  text-align: left;
+}

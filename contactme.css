@@ -1,0 +1,67 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #FFCF76;
+  text-align: center;
+}
+
+/* head */
+h1{
+  background-color: purple;
+  color: pink;
+  padding: 2vw;
+  margin-bottom: 2vw;
+  border-bottom: 2vw double #FFCF76;
+}
+
+/* form */
+form{
+  background-color: lavender;
+  margin: 5vw;
+  padding: 10vw 0;
+  border: 5vw double royalblue;
+  border-radius: 3vw;
+}
+input, textarea, select{
+  background-color: blueviolet;
+  color: gold;
+  margin: 2vw;
+  padding: 2vw;
+  width: 60vw;
+  font-size: 3vw;
+  border: 3px solid tomato;
+  border-radius: 3vw;
+  font-weight: bold;
+}
+::placeholder{
+  color: gold;
+  font-weight: bold;
+}
+
+/* button */
+button{
+  font-size: 3vw;
+  width: 30vw;
+  background-color: royalblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 2vw;
+}
+button:hover{
+  background-color: dodgerblue;
+}
+button:active{
+  background-color: deepskyblue;
+}
+button:disabled{
+  background-color: lightgray;
+  color: gray; 
+  cursor: not-allowed; 
+}

@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TJ Weather & Time website</title>
+        <link rel="icon" href="tjlogos.jpg">
+    <link rel="stylesheet" href="timedate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+ <!--header-->
+ <details id="details">
+   <summary id="summary">
+     <i class="fa-solid fa-bars heads"></i>
+   </summary>
+   <a href="home.html" class="a">Home</a>
+   <a href="weather.html" class="a">Weather</a>
+   <a href="timedate.html" class="a">Time & Date</a>
+ </details>
+  
+  <div class="time">
+  <h1 class="h1">This is your current location time.</h1>
+  <p id="local-time"></p>
+  </div>
+ 
+  <div class="hr">
+    <hr>
+  </div>
+ 
+ <div class="time">
+  <h1>If you want to know time of another country than you can search it here.</h1>
+  <input type="search" id="input2" placeholder="Enter your country" onkeyup="searchFunCountry()">
+    <div class="table-container">
+    <table id="table">
+        <tr id="th">
+            <th>Sr.No</th>
+            <th>Continent name</th>
+            <th>Country name</th>
+            <th>Time</th>
+            <th>Date</th>
+        </tr>
+
+        <!-- Africa -->
+
+        <tr class="td">
+            <td>1</td>
+            <td class="td">Africa</td>
+            <td class="td1" >Algeria</td>
+            <td id="africa1">HH:MM:SS</td>
+            <td id="africa12">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>2</td>
+            <td class="td">Africa</td>
+            <td class="td1" >Central African</td>
+            <td id="africa2">HH:MM:SS</td>
+            <td id="africa22">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>3</td>
+            <td class="td">Africa</td>
+            <td class="td1" >Chad</td>
+            <td id="africa3">HH:MM:SS</td>
+            <td id="africa32">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>4</td>
+            <td class="td">Africa</td>
+            <td class="td1" >Egypt</td>
+            <td id="africa4">HH:MM:SS</td>
+            <td id="africa42">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>5</td>
+            <td class="td">Africa</td>
+            <td class="td1" >Ghana</td>
+            <td id="africa5">HH:MM:SS</td>
+            <td id="africa52">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>6</td>
+            <td class="td">Africa</td>
+            <td class="td1" >Guinea-Bissau</td>
+            <td id="africa6">HH:MM:SS</td>
+            <td id="africa62">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>7</td>
+            <td class="td">Africa</td>
+            <td class="td1" >Kenya</td>
+            <td id="africa7">HH:MM:SS</td>
+            <td id="africa72">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>8</td>
+            <td class="td">Africa</td>
+            <td class="td1" >Liberia</td>
+            <td id="africa8">HH:MM:SS</td>
+            <td id="africa82">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>9</td>
+            <td class="td">Africa</td>
+            <td class="td1" >Libya</td>
+            <td id="africa9">HH:MM:SS</td>
+            <td id="africa92">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>10</td>
+            <td class="td">Africa</td>
+            <td class="td1">Morocco</td>
+            <td id="africa10">HH:MM:SS</td>
+            <td id="africa102">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>11</td>
+            <td class="td">Africa</td>
+            <td class="td1">Morocco</td>
+            <td id="africa11">HH:MM:SS</td>
+            <td id="africa112">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>12</td>
+            <td class="td">Africa</td>
+            <td class="td1">Mozambique</td>
+            <td id="africaMozambique">HH:MM:SS</td>
+            <td id="africa122">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>13</td>
+            <td class="td">Africa</td>
+            <td class="td1">Namibia</td>
+            <td id="africa13">HH:MM:SS</td>
+            <td id="africa132">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>14</td>
+            <td class="td">Africa</td>
+            <td class="td1">Nigeria</td>
+            <td id="africa14">HH:MM:SS</td>
+            <td id="africa142">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>15</td>
+            <td class="td">Africa</td>
+            <td class="td1">Yamoussoukro</td>
+            <td id="africa15">HH:MM:SS</td>
+            <td id="africa152">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>16</td>
+            <td class="td">Africa</td>
+            <td class="td1">Sebtah and Melilah</td>
+            <td id="africa16">HH:MM:SS</td>
+            <td id="africa162">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>17</td>
+            <td class="td">Africa</td>
+            <td class="td1">Sudan</td>
+            <td id="africa17">HH:MM:SS</td>
+            <td id="africa172">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>18</td>
+            <td class="td">Africa</td>
+            <td class="td1">South Sudan</td>
+            <td id="africa18">HH:MM:SS</td>
+            <td id="africa182">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>19</td>
+            <td class="td">Africa</td>
+            <td class="td1">South Africa</td>
+            <td id="africa19">HH:MM:SS</td>
+            <td id="africa192">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>20</td>
+            <td class="td">Africa</td>
+            <td class="td1">Tunisia</td>
+            <td id="africa20">HH:MM:SS</td>
+            <td id="africa202">DD:MM:YYYY</td>
+        </tr>
+
+        <!-- Antarctica -->
+
+        <tr class="td">
+            <td>21</td>
+            <td>Antarctica</td>
+            <td class="td1">Casey</td>
+            <td id="Antarctica1">HH:MM:SS</td>
+            <td id="Antarctica12">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>22</td>
+            <td>Antarctica</td>
+            <td class="td1">Davis</td>
+            <td id="Antarctica2">HH:MM:SS</td>
+            <td id="Antarctica22">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>23</td>
+            <td>Antarctica</td>
+            <td class="td1">DumontDUrville</td>
+            <td id="Antarctica3">HH:MM:SS</td>
+            <td id="Antarctica32">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>24</td>
+            <td>Antarctica</td>
+            <td class="td1">Mawson</td>
+            <td id="Antarctica4">HH:MM:SS</td>
+            <td id="Antarctica42">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>25</td>
+            <td>Antarctica</td>
+            <td class="td1">Macquarie</td>
+            <td id="Antarctica5">HH:MM:SS</td>
+            <td id="Antarctica52">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>26</td>
+            <td>Antarctica</td>
+            <td class="td1">Palmer</td>
+            <td id="Antarctica6">HH:MM:SS</td>
+            <td id="Antarctica62">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>27</td>
+            <td>Antarctica</td>
+            <td class="td1">Rothera</td>
+            <td id="Antarctica7">HH:MM:SS</td>
+            <td id="Antarctica72">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>28</td>
+            <td>Antarctica</td>
+            <td class="td1">Syowa</td>
+            <td id="Antarctica8">HH:MM:SS</td>
+            <td id="Antarctica82">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>29</td>
+            <td>Antarctica</td>
+            <td class="td1">Troll</td>
+            <td id="Antarctica9">HH:MM:SS</td>
+            <td id="Antarctica92">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>30</td>
+            <td>Antarctica</td>
+            <td class="td1">Vostok</td>
+            <td id="Antarctica10">HH:MM:SS</td>
+            <td id="Antarctica102">DD:MM:YYYY</td>
+        </tr>
+
+        <!-- Asia -->
+
+        <tr class="td">
+            <td>31</td>
+            <td>Asia</td>
+            <td class="td1">Jordan</td>
+            <td id="Asia1">HH:MM:SS</td>
+            <td id="Asia12">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>32</td>
+            <td>Asia</td>
+            <td class="td1">Kazakhstan</td>
+            <td id="Asia2">HH:MM:SS</td>
+            <td id="Asia22">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>33</td>
+            <td>Asia</td>
+            <td class="td1">Kazakhstan</td>
+            <td id="Asia3">HH:MM:SS</td>
+            <td id="Asia32">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>34</td>
+            <td>Asia</td>
+            <td class="td1">Kazakhstan</td>
+            <td id="Asia4">HH:MM:SS</td>
+            <td id="Asia42">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>35</td>
+            <td>Asia</td>
+            <td class="td1">Kazakhstan</td>
+            <td id="Asia5">HH:MM:SS</td>
+            <td id="Asia52">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>36</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia6">HH:MM:SS</td>
+            <td id="Asia62">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>37</td>
+            <td>Asia</td>
+            <td class="td1">Turkmenistan</td>
+            <td id="Asia7">HH:MM:SS</td>
+            <td id="Asia72">DD:MM:YYYY</td>
+        </tr>
+        
+        <tr class="td">
+            <td>38</td>
+            <td>Asia</td>
+            <td class="td1">Azerbaijani</td>
+            <td id="Asia8">HH:MM:SS</td>
+            <td id="Asia82">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>39</td>
+            <td>Asia</td>
+            <td class="td1">Borneo Island</td>
+            <td id="Asia9">HH:MM:SS</td>
+            <td id="Asia92">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>40</td>
+            <td>Asia</td>
+            <td class="td1">Iraq</td>
+            <td id="Asia10">HH:MM:SS</td>
+            <td id="Asia102">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>41</td>
+            <td>Asia</td>
+            <td class="td1">Kyrgyzstan</td>
+            <td id="Asia11">HH:MM:SS</td>
+            <td id="Asia112">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>42</td>
+            <td>Asia</td>
+            <td class="td1">Lebanon</td>
+            <td id="Asia120">HH:MM:SS</td>
+            <td id="Asia122">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>43</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia13">HH:MM:SS</td>
+            <td id="Asia132">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>44</td>
+            <td>Asia</td>
+            <td class="td1">Thailand</td>
+            <td id="Asia14">HH:MM:SS</td>
+            <td id="Asia142">DD:MM:YYYY</td>
+        </tr>
+        
+        <tr class="td">
+            <td>45</td>
+            <td>Asia</td>
+            <td class="td1">Sri Lanka</td>
+            <td id="Asia15">HH:MM:SS</td>
+            <td id="Asia152">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>46</td>
+            <td>Asia</td>
+            <td class="td1">Mongolia</td>
+            <td id="Asia16">HH:MM:SS</td>
+            <td id="Asia162">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>47</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia17">HH:MM:SS</td>
+            <td id="Asia172">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>48</td>
+            <td>Asia</td>
+            <td class="td1">Dubai</td>
+            <td id="Asia18">HH:MM:SS</td>
+            <td id="Asia182">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>49</td>
+            <td>Asia</td>
+            <td class="td1">Bangladesh</td>
+            <td id="Asia19">HH:MM:SS</td>
+            <td id="Asia192">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>50</td>
+            <td>Asia</td>
+            <td class="td1">Syria</td>
+            <td id="Asia20">HH:MM:SS</td>
+            <td id="Asia202">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>51</td>
+            <td>Asia</td>
+            <td class="td1">Tajikistan</td>
+            <td id="Asia21">HH:MM:SS</td>
+            <td id="Asia212">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>52</td>
+            <td>Asia</td>
+            <td class="td1">Timor-Leste</td>
+            <td id="Asia220">HH:MM:SS</td>
+            <td id="Asia222">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>53</td>
+            <td>Asia</td>
+            <td class="td1">Cyprus</td>
+            <td id="Asia23">HH:MM:SS</td>
+            <td id="Asia232">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>54</td>
+            <td>Asia</td>
+            <td class="td1">Palestine</td>
+            <td id="Asia24">HH:MM:SS</td>
+            <td id="Asia242">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>55</td>
+            <td>Asia</td>
+            <td class="td1">Hong Kong</td>
+            <td id="Asia25">HH:MM:SS</td>
+            <td id="Asia252">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>56</td>
+            <td>Asia</td>
+            <td class="td1">Mongolia</td>
+            <td id="Asia26">HH:MM:SS</td>
+            <td id="Asia262">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>57</td>
+            <td>Asia</td>
+            <td class="td1">Palestine</td>
+            <td id="Asia27">HH:MM:SS</td>
+            <td id="Asia272">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>58</td>
+            <td>Asia</td>
+            <td class="td1">Vietnam</td>
+            <td id="Asia28">HH:MM:SS</td>
+            <td id="Asia282">DD:MM:YYYY</td>
+        </tr>
+
+        <tr class="td">
+            <td>59</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia29">HH:MM:SS</td>
+            <td id="Asia292">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>60</td>
+            <td>Asia</td>
+            <td class="td1">Indonesia</td>
+            <td id="Asia30">HH:MM:SS</td>
+            <td id="Asia302">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>61</td>
+            <td>Asia</td>
+            <td class="td1">Indonesia</td>
+            <td id="Asia31">HH:MM:SS</td>
+            <td id="Asia312">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>62</td>
+            <td>Asia</td>
+            <td class="td1">Israel</td>
+            <td id="Asia320">HH:MM:SS</td>
+            <td id="Asia322">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>63</td>
+            <td>Asia</td>
+            <td class="td1">Afghanistan</td>
+            <td id="Asia33">HH:MM:SS</td>
+            <td id="Asia332">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>64</td>
+            <td>Asia</td>
+            <td class="td1">India</td>
+            <td id="Asia34">HH:MM:SS</td>
+            <td id="Asia342">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>65</td>
+            <td>Asia</td>
+            <td class="td1">Malaysia</td>
+            <td id="Asia35">HH:MM:SS</td>
+            <td id="Asia352">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>66</td>
+            <td>Asia</td>
+            <td class="td1">Malaysia</td>
+            <td id="Asia36">HH:MM:SS</td>
+            <td id="Asia362">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>67</td>
+            <td>Asia</td>
+            <td class="td1">Nepal</td>
+            <td id="Asia37">HH:MM:SS</td>
+            <td id="Asia372">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>68</td>
+            <td>Asia</td>
+            <td class="td1">Pakistan</td>
+            <td id="Asia38">HH:MM:SS</td>
+            <td id="Asia382">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>69</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia39">HH:MM:SS</td>
+            <td id="Asia392">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>70</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia40">HH:MM:SS</td>
+            <td id="Asia402">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>71</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia41">HH:MM:SS</td>
+            <td id="Asia412">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>72</td>
+            <td>Asia</td>
+            <td class="td1">Armenia</td>
+            <td id="Asia420">HH:MM:SS</td>
+            <td id="Asia422">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>73</td>
+            <td>Asia</td>
+            <td class="td1">Bhutan</td>
+            <td id="Asia43">HH:MM:SS</td>
+            <td id="Asia432">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>74</td>
+            <td>Asia</td>
+            <td class="td1">China</td>
+            <td id="Asia44">HH:MM:SS</td>
+            <td id="Asia442">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>75</td>
+            <td>Asia</td>
+            <td class="td1">China</td>
+            <td id="Asia45">HH:MM:SS</td>
+            <td id="Asia452">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>76</td>
+            <td>Asia</td>
+            <td class="td1">Cyprus</td>
+            <td id="Asia46">HH:MM:SS</td>
+            <td id="Asia462">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>77</td>
+            <td>Asia</td>
+            <td class="td1">Georgia</td>
+            <td id="Asia47">HH:MM:SS</td>
+            <td id="Asia472">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>78</td>
+            <td>Asia</td>
+            <td class="td1">Indonesia</td>
+            <td id="Asia48">HH:MM:SS</td>
+            <td id="Asia482">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>79</td>
+            <td>Asia</td>
+            <td class="td1">Indonesia</td>
+            <td id="Asia49">HH:MM:SS</td>
+            <td id="Asia492">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>80</td>
+            <td>Asia</td>
+            <td class="td1">Iran</td>
+            <td id="Asia50">HH:MM:SS</td>
+            <td id="Asia502">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>81</td>
+            <td>Asia</td>
+            <td class="td1">Japan</td>
+            <td id="Asia51">HH:MM:SS</td>
+            <td id="Asia512">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>82</td>
+            <td>Asia</td>
+            <td class="td1">Korea</td>
+            <td id="Asia520">HH:MM:SS</td>
+            <td id="Asia522">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>83</td>
+            <td>Asia</td>
+            <td class="td1">Korea</td>
+            <td id="Asia53">HH:MM:SS</td>
+            <td id="Asia532">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>84</td>
+            <td>Asia</td>
+            <td class="td1">Kazakhstan</td>
+            <td id="Asia54">HH:MM:SS</td>
+            <td id="Asia542">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>85</td>
+            <td>Asia</td>
+            <td class="td1">Kazakhstan</td>
+            <td id="Asia55">HH:MM:SS</td>
+            <td id="Asia552">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>86</td>
+            <td>Asia</td>
+            <td class="td1">Kazakhstan</td>
+            <td id="Asia56">HH:MM:SS</td>
+            <td id="Asia562">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>87</td>
+            <td>Asia</td>
+            <td class="td1">Myanmar</td>
+            <td id="Asia57">HH:MM:SS</td>
+            <td id="Asia572">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>88</td>
+            <td>Asia</td>
+            <td class="td1">Mongolia</td>
+            <td id="Asia58">HH:MM:SS</td>
+            <td id="Asia582">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>89</td>
+            <td>Asia</td>
+            <td class="td1">Macau</td>
+            <td id="Asia59">HH:MM:SS</td>
+            <td id="Asia592">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>90</td>
+            <td>Asia</td>
+            <td class="td1">Philippines</td>
+            <td id="Asia60">HH:MM:SS</td>
+            <td id="Asia602">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>91</td>
+            <td>Asia</td>
+            <td class="td1">Qatar</td>
+            <td id="Asia61">HH:MM:SS</td>
+            <td id="Asia612">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>92</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia620">HH:MM:SS</td>
+            <td id="Asia622">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>93</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia63">HH:MM:SS</td>
+            <td id="Asia632">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>94</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia64">HH:MM:SS</td>
+            <td id="Asia642">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>95</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia65">HH:MM:SS</td>
+            <td id="Asia652">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>96</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia66">HH:MM:SS</td>
+            <td id="Asia662">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>97</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia67">HH:MM:SS</td>
+            <td id="Asia672">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>98</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia68">HH:MM:SS</td>
+            <td id="Asia682">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>99</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia69">HH:MM:SS</td>
+            <td id="Asia692">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>100</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia70">HH:MM:SS</td>
+            <td id="Asia702">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>101</td>
+            <td>Asia</td>
+            <td class="td1">Sakhalin Island</td>
+            <td id="Asia71">HH:MM:SS</td>
+            <td id="Asia712">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>102</td>
+            <td>Asia</td>
+            <td class="td1">Russia</td>
+            <td id="Asia720">HH:MM:SS</td>
+            <td id="Asia722">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>103</td>
+            <td>Asia</td>
+            <td class="td1">Saudi Arabia</td>
+            <td id="Asia73">HH:MM:SS</td>
+            <td id="Asia732">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>104</td>
+            <td>Asia</td>
+            <td class="td1">Singapore</td>
+            <td id="Asia74">HH:MM:SS</td>
+            <td id="Asia742">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>105</td>
+            <td>Asia</td>
+            <td class="td1">Taiwan</td>
+            <td id="Asia75">HH:MM:SS</td>
+            <td id="Asia752">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>106</td>
+            <td>Asia</td>
+            <td class="td1">Uzbekistan</td>
+            <td id="Asia76">HH:MM:SS</td>
+            <td id="Asia762">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>107</td>
+            <td>Asia</td>
+            <td class="td1">Uzbekistan</td>
+            <td id="Asia77">HH:MM:SS</td>
+            <td id="Asia772">DD:MM:YYYY</td>
+        </tr>
+
+        <!-- Europe -->
+
+        <tr class="td">
+            <td>108</td>
+            <td>Europe</td>
+            <td class="td1">Andorra</td>
+            <td id="europe1">HH:MM:SS</td>
+            <td id="europe12">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>109</td>
+            <td>Europe</td>
+            <td class="td1">Albania</td>
+            <td id="europe2">HH:MM:SS</td>
+            <td id="europe22">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>110</td>
+            <td>Europe</td>
+            <td class="td1">Austria</td>
+            <td id="europe3">HH:MM:SS</td>
+            <td id="europe32">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>111</td>
+            <td>Europe</td>
+            <td class="td1">Belgium</td>
+            <td id="europe4">HH:MM:SS</td>
+            <td id="europe42">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>112</td>
+            <td>Europe</td>
+            <td class="td1">Bulgaria</td>
+            <td id="europe5">HH:MM:SS</td>
+            <td id="europe52">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>113</td>
+            <td>Europe</td>
+            <td class="td1">Belarus</td>
+            <td id="europe6">HH:MM:SS</td>
+            <td id="europe62">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>114</td>
+            <td>Europe</td>
+            <td class="td1">Zurich</td>
+            <td id="europe7">HH:MM:SS</td>
+            <td id="europe72">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>115</td>
+            <td>Europe</td>
+            <td class="td1">Czech Republic</td>
+            <td id="europe8">HH:MM:SS</td>
+            <td id="europe82">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>116</td>
+            <td>Europe</td>
+            <td class="td1">Germany</td>
+            <td id="europe9">HH:MM:SS</td>
+            <td id="europe92">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>117</td>
+            <td>Europe</td>
+            <td class="td1">Denmark</td>
+            <td id="europe10">HH:MM:SS</td>
+            <td id="europe102">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>118</td>
+            <td>Europe</td>
+            <td class="td1">Estonia</td>
+            <td id="europe11">HH:MM:SS</td>
+            <td id="europe112">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>119</td>
+            <td>Europe</td>
+            <td class="td1">Spain</td>
+            <td id="europe120">HH:MM:SS</td>
+            <td id="europe122">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>120</td>
+            <td>Europe</td>
+            <td class="td1">Finland</td>
+            <td id="europe13">HH:MM:SS</td>
+            <td id="europe132">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>121</td>
+            <td>Europe</td>
+            <td class="td1">France</td>
+            <td id="europe14">HH:MM:SS</td>
+            <td id="europe142">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>122</td>
+            <td>Europe</td>
+            <td class="td1">the United Kingdom</td>
+            <td id="europe15">HH:MM:SS</td>
+            <td id="europe152">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>123</td>
+            <td>Europe</td>
+            <td class="td1">Gibraltar</td>
+            <td id="europe16">HH:MM:SS</td>
+            <td id="europe162">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>124</td>
+            <td>Europe</td>
+            <td class="td1">Greece</td>
+            <td id="europe17">HH:MM:SS</td>
+            <td id="europe172">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>125</td>
+            <td>Europe</td>
+            <td class="td1">Hungary</td>
+            <td id="europe18">HH:MM:SS</td>
+            <td id="europe182">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>126</td>
+            <td>Europe</td>
+            <td class="td1">Ireland</td>
+            <td id="europe19">HH:MM:SS</td>
+            <td id="europe192">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>127</td>
+            <td>Europe</td>
+            <td class="td1">Italy</td>
+            <td id="europe20">HH:MM:SS</td>
+            <td id="europe202">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>128</td>
+            <td>Europe</td>
+            <td class="td1">Lithuania</td>
+            <td id="europe21">HH:MM:SS</td>
+            <td id="europe212">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>129</td>
+            <td>Europe</td>
+            <td class="td1">Luxembourg</td>
+            <td id="europe220">HH:MM:SS</td>
+            <td id="europe222">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>130</td>
+            <td>Europe</td>
+            <td class="td1">Latvia</td>
+            <td id="europe23">HH:MM:SS</td>
+            <td id="europe232">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>131</td>
+            <td>Europe</td>
+            <td class="td1">Monaco</td>
+            <td id="europe24">HH:MM:SS</td>
+            <td id="europe242">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>132</td>
+            <td>Europe</td>
+            <td class="td1">Moldova</td>
+            <td id="europe25">HH:MM:SS</td>
+            <td id="europe252">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>133</td>
+            <td>Europe</td>
+            <td class="td1">Malta</td>
+            <td id="europe26">HH:MM:SS</td>
+            <td id="europe262">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>134</td>
+            <td>Europe</td>
+            <td class="td1">Netherlands</td>
+            <td id="europe27">HH:MM:SS</td>
+            <td id="europe272">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>135</td>
+            <td>Europe</td>
+            <td class="td1">Norway</td>
+            <td id="europe28">HH:MM:SS</td>
+            <td id="europe282">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>136</td>
+            <td>Europe</td>
+            <td class="td1">Poland</td>
+            <td id="europe29">HH:MM:SS</td>
+            <td id="europe292">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>137</td>
+            <td>Europe</td>
+            <td class="td1">Portugal</td>
+            <td id="europe30">HH:MM:SS</td>
+            <td id="europe302">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>138</td>
+            <td>Europe</td>
+            <td class="td1">Romania</td>
+            <td id="europe31">HH:MM:SS</td>
+            <td id="europe312">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>139</td>
+            <td>Europe</td>
+            <td class="td1">Serbia</td>
+            <td id="europe320">HH:MM:SS</td>
+            <td id="europe322">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>140</td>
+            <td>Europe</td>
+            <td class="td1">Russia</td>
+            <td id="europe33">HH:MM:SS</td>
+            <td id="europe332">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>141</td>
+            <td>Europe</td>
+            <td class="td1">Russia</td>
+            <td id="europe34">HH:MM:SS</td>
+            <td id="europe342">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>142</td>
+            <td>Europe</td>
+            <td class="td1">Ukraine</td>
+            <td id="europe35">HH:MM:SS</td>
+            <td id="europe352">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>143</td>
+            <td>Europe</td>
+            <td class="td1">Russia</td>
+            <td id="europe36">HH:MM:SS</td>
+            <td id="europe362">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>144</td>
+            <td>Europe</td>
+            <td class="td1">Russia</td>
+            <td id="europe37">HH:MM:SS</td>
+            <td id="europe372">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>145</td>
+            <td>Europe</td>
+            <td class="td1">Russia</td>
+            <td id="europe38">HH:MM:SS</td>
+            <td id="europe382">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>146</td>
+            <td>Europe</td>
+            <td class="td1">Russia</td>
+            <td id="europe39">HH:MM:SS</td>
+            <td id="europe392">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>147</td>
+            <td>Europe</td>
+            <td class="td1">Russia</td>
+            <td id="europe40">HH:MM:SS</td>
+            <td id="europe402">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>148</td>
+            <td>Europe</td>
+            <td class="td1">Russia</td>
+            <td id="europe41">HH:MM:SS</td>
+            <td id="europe412">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>149</td>
+            <td>Europe</td>
+            <td class="td1">Sweden</td>
+            <td id="europe420">HH:MM:SS</td>
+            <td id="europe422">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>150</td>
+            <td>Europe</td>
+            <td class="td1">Turkey</td>
+            <td id="europe43">HH:MM:SS</td>
+            <td id="europe432">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>151</td>
+            <td>Europe</td>
+            <td class="td1">Ukraine</td>
+            <td id="europe44">HH:MM:SS</td>
+            <td id="europe442">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>152</td>
+            <td>Europe</td>
+            <td class="td1">Ukraine</td>
+            <td id="europe45">HH:MM:SS</td>
+            <td id="europe452">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>153</td>
+            <td>Europe</td>
+            <td class="td1">Ukraine</td>
+            <td id="europe46">HH:MM:SS</td>
+            <td id="europe462">DD:MM:YYYY</td>
+        </tr>
+
+        <!-- America -->
+
+        <tr class="td">
+            <td>154</td>
+            <td>America</td>
+            <td class="td1">Argentina</td>
+            <td id="america1">HH:MM:SS</td>
+            <td id="america12">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>155</td>
+            <td>America</td>
+            <td class="td1">Argentina</td>
+            <td id="america2">HH:MM:SS</td>
+            <td id="america22">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>156</td>
+            <td>America</td>
+            <td class="td1">Argentina</td>
+            <td id="america3">HH:MM:SS</td>
+            <td id="america32">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>157</td>
+            <td>America</td>
+            <td class="td1">Argentina</td>
+            <td id="america4">HH:MM:SS</td>
+            <td id="america42">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>158</td>
+            <td>America</td>
+            <td class="td1">Argentina</td>
+            <td id="america5">HH:MM:SS</td>
+            <td id="america52">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>159</td>
+            <td>America</td>
+            <td class="td1">Argentina</td>
+            <td id="america6">HH:MM:SS</td>
+            <td id="america62">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>160</td>
+            <td>America</td>
+            <td class="td1">Argentina</td>
+            <td id="america7">HH:MM:SS</td>
+            <td id="america72">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>161</td>
+            <td>America</td>
+            <td class="td1">Argentina</td>
+            <td id="america8">HH:MM:SS</td>
+            <td id="america82">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>162</td>
+            <td>America</td>
+            <td class="td1">Argentina</td>
+            <td id="america9">HH:MM:SS</td>
+            <td id="america92">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>163</td>
+            <td>America</td>
+            <td class="td1">Argentina</td>
+            <td id="america10">HH:MM:SS</td>
+            <td id="america102">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>164</td>
+            <td>America</td>
+            <td class="td1">Argentina</td>
+            <td id="america11">HH:MM:SS</td>
+            <td id="america112">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>165</td>
+            <td>America</td>
+            <td class="td1">Argentina</td>
+            <td id="america120">HH:MM:SS</td>
+            <td id="america122">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>166</td>
+            <td>America</td>
+            <td class="td1">Barbados</td>
+            <td id="america13">HH:MM:SS</td>
+            <td id="america132">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>167</td>
+            <td>America</td>
+            <td class="td1">Bolivia</td>
+            <td id="america14">HH:MM:SS</td>
+            <td id="america142">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>168</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america15">HH:MM:SS</td>
+            <td id="america152">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>169</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america16">HH:MM:SS</td>
+            <td id="america162">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>170</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america17">HH:MM:SS</td>
+            <td id="america172">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>171</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america18">HH:MM:SS</td>
+            <td id="america182">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>172</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america19">HH:MM:SS</td>
+            <td id="america192">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>173</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america20">HH:MM:SS</td>
+            <td id="america202">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>174</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america21">HH:MM:SS</td>
+            <td id="america212">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>175</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america220">HH:MM:SS</td>
+            <td id="america222">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>176</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america23">HH:MM:SS</td>
+            <td id="america232">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>177</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america24">HH:MM:SS</td>
+            <td id="america242">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>178</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america25">HH:MM:SS</td>
+            <td id="america252">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>179</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america26">HH:MM:SS</td>
+            <td id="america262">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>180</td>
+            <td>America</td>
+            <td class="td1">Boa Vista</td>
+            <td id="america27">HH:MM:SS</td>
+            <td id="america272">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>181</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america28">HH:MM:SS</td>
+            <td id="america282">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>182</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america29">HH:MM:SS</td>
+            <td id="america292">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>183</td>
+            <td>America</td>
+            <td class="td1">Brazil</td>
+            <td id="america30">HH:MM:SS</td>
+            <td id="america302">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>184</td>
+            <td>America</td>
+            <td class="td1">Bahamas</td>
+            <td id="america31">HH:MM:SS</td>
+            <td id="america312">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>185</td>
+            <td>America</td>
+            <td class="td1">Central America</td>
+            <td id="america320">HH:MM:SS</td>
+            <td id="america322">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>186</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america33">HH:MM:SS</td>
+            <td id="america332">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>187</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america34">HH:MM:SS</td>
+            <td id="america342">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>188</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america35">HH:MM:SS</td>
+            <td id="america352">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>189</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america36">HH:MM:SS</td>
+            <td id="america362">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>190</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america37">HH:MM:SS</td>
+            <td id="america372">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>191</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america38">HH:MM:SS</td>
+            <td id="america382">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>192</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america39">HH:MM:SS</td>
+            <td id="america392">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>193</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america40">HH:MM:SS</td>
+            <td id="america402">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>194</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america41">HH:MM:SS</td>
+            <td id="america412">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>195</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america420">HH:MM:SS</td>
+            <td id="america422">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>196</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america43">HH:MM:SS</td>
+            <td id="america432">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>197</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america44">HH:MM:SS</td>
+            <td id="america442">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>198</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america45">HH:MM:SS</td>
+            <td id="america452">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>199</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america46">HH:MM:SS</td>
+            <td id="america462">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>200</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america47">HH:MM:SS</td>
+            <td id="america472">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>201</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america48">HH:MM:SS</td>
+            <td id="america482">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>202</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america49">HH:MM:SS</td>
+            <td id="america492">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>203</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america50">HH:MM:SS</td>
+            <td id="america502">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>204</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america51">HH:MM:SS</td>
+            <td id="america512">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>205</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america520">HH:MM:SS</td>
+            <td id="america522">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>206</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america53">HH:MM:SS</td>
+            <td id="america532">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>207</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america54">HH:MM:SS</td>
+            <td id="america542">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>208</td>
+            <td>America</td>
+            <td class="td1">California</td>
+            <td id="america55">HH:MM:SS</td>
+            <td id="america552">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>209</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america56">HH:MM:SS</td>
+            <td id="america562">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>210</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america57">HH:MM:SS</td>
+            <td id="america572">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>211</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america58">HH:MM:SS</td>
+            <td id="america582">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>212</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america59">HH:MM:SS</td>
+            <td id="america592">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>213</td>
+            <td>America</td>
+            <td class="td1">Canada</td>
+            <td id="america60">HH:MM:SS</td>
+            <td id="america602">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>214</td>
+            <td>America</td>
+            <td class="td1">Chile</td>
+            <td id="america61">HH:MM:SS</td>
+            <td id="america612">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>215</td>
+            <td>America</td>
+            <td class="td1">Chile</td>
+            <td id="america620">HH:MM:SS</td>
+            <td id="america622">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>216</td>
+            <td>America</td>
+            <td class="td1">Colombia</td>
+            <td id="america63">HH:MM:SS</td>
+            <td id="america632">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>217</td>
+            <td>America</td>
+            <td class="td1">Central America</td>
+            <td id="america64">HH:MM:SS</td>
+            <td id="america642">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>218</td>
+            <td>America</td>
+            <td class="td1">Cuba</td>
+            <td id="america65">HH:MM:SS</td>
+            <td id="america652">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>219</td>
+            <td>America</td>
+            <td class="td1">Curacao</td>
+            <td id="america66">HH:MM:SS</td>
+            <td id="america662">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>220</td>
+            <td>America</td>
+            <td class="td1">Santo Domingo</td>
+            <td id="america67">HH:MM:SS</td>
+            <td id="america672">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>221</td>
+            <td>America</td>
+            <td class="td1">Ecuador</td>
+            <td id="america68">HH:MM:SS</td>
+            <td id="america682">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>222</td>
+            <td>America</td>
+            <td class="td1">French</td>
+            <td id="america69">HH:MM:SS</td>
+            <td id="america692">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>223</td>
+            <td>America</td>
+            <td class="td1">Greenland</td>
+            <td id="america70">HH:MM:SS</td>
+            <td id="america702">DD:MM:YYYY</td>
+        </tr>
+
+
+         <tr class="td">
+            <td>224</td>
+            <td>America</td>
+            <td class="td1">Greenland</td>
+            <td id="america71">HH:MM:SS</td>
+            <td id="america712">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>225</td>
+            <td>America</td>
+            <td class="td1">Greenland</td>
+            <td id="america720">HH:MM:SS</td>
+            <td id="america722">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>226</td>
+            <td>America</td>
+            <td class="td1">Greenland</td>
+            <td id="america73">HH:MM:SS</td>
+            <td id="america732">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>227</td>
+            <td>America</td>
+            <td class="td1">Central America</td>
+            <td id="america74">HH:MM:SS</td>
+            <td id="america742">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>228</td>
+            <td>America</td>
+            <td class="td1">South America</td>
+            <td id="america75">HH:MM:SS</td>
+            <td id="america752">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>229</td>
+            <td>America</td>
+            <td class="td1">Honduras</td>
+            <td id="america76">HH:MM:SS</td>
+            <td id="america762">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>230</td>
+            <td>America</td>
+            <td class="td1">Haiti</td>
+            <td id="america77">HH:MM:SS</td>
+            <td id="america772">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>231</td>
+            <td>America</td>
+            <td class="td1">Jamaica</td>
+            <td id="america78">HH:MM:SS</td>
+            <td id="america782">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>232</td>
+            <td>America</td>
+            <td class="td1">France</td>
+            <td id="america79">HH:MM:SS</td>
+            <td id="america792">DD:MM:YYYY</td>
+        </tr>
+         <tr class="td">
+            <td>233</td>
+            <td>America</td>
+            <td class="td1">Mexico</td>
+            <td id="america80">HH:MM:SS</td>
+            <td id="america802">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>234</td>
+            <td>America</td>
+            <td class="td1">Mexico</td>
+            <td id="america81">HH:MM:SS</td>
+            <td id="america812">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>235</td>
+            <td>America</td>
+            <td class="td1">Mexico</td>
+            <td id="america820">HH:MM:SS</td>
+            <td id="america822">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>236</td>
+            <td>America</td>
+            <td class="td1">Mexico</td>
+            <td id="america83">HH:MM:SS</td>
+            <td id="america832">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>237</td>
+            <td>America</td>
+            <td class="td1">Mexico</td>
+            <td id="america84">HH:MM:SS</td>
+            <td id="america842">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>238</td>
+            <td>America</td>
+            <td class="td1">Mexico</td>
+            <td id="america85">HH:MM:SS</td>
+            <td id="america852">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>239</td>
+            <td>America</td>
+            <td class="td1">Mexico</td>
+            <td id="america86">HH:MM:SS</td>
+            <td id="america862">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>240</td>
+            <td>America</td>
+            <td class="td1">Mexico</td>
+            <td id="america87">HH:MM:SS</td>
+            <td id="america872">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>241</td>
+            <td>America</td>
+            <td class="td1">Mexico</td>
+            <td id="america88">HH:MM:SS</td>
+            <td id="america882">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>242</td>
+            <td>America</td>
+            <td class="td1">Mexico</td>
+            <td id="america89">HH:MM:SS</td>
+            <td id="america892">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>243</td>
+            <td>America</td>
+            <td class="td1">Mexico</td>
+            <td id="america90">HH:MM:SS</td>
+            <td id="america902">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>244</td>
+            <td>America</td>
+            <td class="td1">Nicaragua</td>
+            <td id="america91">HH:MM:SS</td>
+            <td id="america912">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>245</td>
+            <td>America</td>
+            <td class="td1">Central America</td>
+            <td id="america920">HH:MM:SS</td>
+            <td id="america922">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>246</td>
+            <td>America</td>
+            <td class="td1">Peru</td>
+            <td id="america93">HH:MM:SS</td>
+            <td id="america932">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>247</td>
+            <td>America</td>
+            <td class="td1">Miquelon</td>
+            <td id="america94">HH:MM:SS</td>
+            <td id="america942">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>248</td>
+            <td>America</td>
+            <td class="td1">Puerto Rico</td>
+            <td id="america95">HH:MM:SS</td>
+            <td id="america952">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>249</td>
+            <td>America</td>
+            <td class="td1">Paraguay</td>
+            <td id="america96">HH:MM:SS</td>
+            <td id="america962">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>250</td>
+            <td>America</td>
+            <td class="td1">Suriname</td>
+            <td id="america97">HH:MM:SS</td>
+            <td id="america972">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>251</td>
+            <td>America</td>
+            <td class="td1">Central America</td>
+            <td id="america98">HH:MM:SS</td>
+            <td id="america982">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>252</td>
+            <td>America</td>
+            <td class="td1">Turks and Caicos</td>
+            <td id="america99">HH:MM:SS</td>
+            <td id="america992">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>253</td>
+            <td>America</td>
+            <td class="td1">Trinidad and Tobago</td>
+            <td id="america100">HH:MM:SS</td>
+            <td id="america1002">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>254</td>
+            <td>America</td>
+            <td class="td1">New York</td>
+            <td id="america101">HH:MM:SS</td>
+            <td id="america1012">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>255</td>
+            <td>America</td>
+            <td class="td1">Michigan</td>
+            <td id="america1020">HH:MM:SS</td>
+            <td id="america1022">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>256</td>
+            <td>America</td>
+            <td class="td1">Kentucky</td>
+            <td id="america103">HH:MM:SS</td>
+            <td id="america1032">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>257</td>
+            <td>America</td>
+            <td class="td1">Sullivan</td>
+            <td id="america104">HH:MM:SS</td>
+            <td id="america1042">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>258</td>
+            <td>America</td>
+            <td class="td1">Indiana</td>
+            <td id="america105">HH:MM:SS</td>
+            <td id="america1052">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>259</td>
+            <td>America</td>
+            <td class="td1">Indiana</td>
+            <td id="america106">HH:MM:SS</td>
+            <td id="america1062">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>260</td>
+            <td>America</td>
+            <td class="td1">Indiana</td>
+            <td id="america107">HH:MM:SS</td>
+            <td id="america1072">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>261</td>
+            <td>America</td>
+            <td class="td1">Indiana</td>
+            <td id="america108">HH:MM:SS</td>
+            <td id="america1082">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>262</td>
+            <td>America</td>
+            <td class="td1">Illinois</td>
+            <td id="america109">HH:MM:SS</td>
+            <td id="america1092">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>263</td>
+            <td>America</td>
+            <td class="td1">-</td>
+            <td id="america110">HH:MM:SS</td>
+            <td id="america1102">DD:MM:YYYY</td>
+        </tr>
+
+        <!-- Australia -->
+
+        <tr class="td">
+            <td>284</td>
+            <td>Australia</td>
+            <td class="td1">Lord howe island</td>
+            <td id="australia1">HH:MM:SS</td>
+            <td id="australia12">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>285</td>
+            <td>Australia</td>
+            <td class="td1">Hobart</td>
+            <td id="australia2">HH:MM:SS</td>
+            <td id="australia22">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>286</td>
+            <td>Australia</td>
+            <td class="td1">Currie island</td>
+            <td id="australia3">HH:MM:SS</td>
+            <td id="australia32">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>287</td>
+            <td>Australia</td>
+            <td class="td1">Melbourne</td>
+            <td id="australia4">HH:MM:SS</td>
+            <td id="australia42">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>288</td>
+            <td>Australia</td>
+            <td class="td1">Sydney</td>
+            <td id="australia5">HH:MM:SS</td>
+            <td id="australia52">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>289</td>
+            <td>Australia</td>
+            <td class="td1">Broken hill</td>
+            <td id="australia6">HH:MM:SS</td>
+            <td id="australia62">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>290</td>
+            <td>Australia</td>
+            <td class="td1">Brisbane</td>
+            <td id="australia7">HH:MM:SS</td>
+            <td id="australia72">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>291</td>
+            <td>Australia</td>
+            <td class="td1">lindeman island</td>
+            <td id="australia8">HH:MM:SS</td>
+            <td id="australia82">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>292</td>
+            <td>Australia</td>
+            <td class="td1">Adelaide</td>
+            <td id="australia9">HH:MM:SS</td>
+            <td id="australia92">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>293</td>
+            <td>Australia</td>
+            <td class="td1">Darwin</td>
+            <td id="australia10">HH:MM:SS</td>
+            <td id="australia102">DD:MM:YYYY</td>
+        </tr>
+        <tr class="td">
+            <td>294</td>
+            <td>Australia</td>
+            <td class="td1">Perth</td>
+            <td id="australia11">HH:MM:SS</td>
+            <td id="australia112">DD:MM:YYYY</td>
+        </tr>
+    </table>
+    </div>
+    </div>
+        <!--footer-->
+    <section>
+      <div id="footer">
+        <h2 id="fhead">TJ Weather and Time</h2>
+      </div>
+    </section>
+    <script src="timedate.js"></script>
+
+</body>
+
+</html>
